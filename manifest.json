@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Betting Automation",
+    "version": "1.0",
+    "description": "Automate betting on KTO.",
+    "permissions": [
+        "storage",
+        "tabs",
+        "proxy"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.webp"
+    },
+    "host_permissions": [
+        "https://www.kto.com/*"
+    ]
+}

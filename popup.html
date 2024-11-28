@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>KTO Betting Automation</title>
+    <style>
+        body {
+            background-color: #f8f9fa; 
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .betting-option {
+            margin-bottom: 15px;
+        }
+        .btn-primary {
+            width: 100%; 
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KTO Betting Automation</h1>
+        <div class="betting-option">
+            <label>
+                <input type="radio" name="bettingMode" value="instant" checked> Instant Bets
+            </label>
+        </div>
+        <div class="betting-option">
+            <label>
+                <input type="radio" name="bettingMode" value="semi-cyclical"> Semi-Cyclical Bets
+            </label>
+        </div>
+        <div class="betting-option">
+            <label>
+                <input type="radio" name="bettingMode" value="cyclical"> Cyclical Bets
+            </label>
+        </div>
+        <button id="start" class="btn btn-primary">Start Betting</button>
+        <footer>
+            <p>© 2024 KTO Betting Automation</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
